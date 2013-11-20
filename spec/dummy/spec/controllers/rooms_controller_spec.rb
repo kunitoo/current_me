@@ -5,7 +5,7 @@ describe RoomsController do
   describe 'me!' do
     let!(:user) { User.create!(name: 'akiinyo') }
 
-    subject &:response
+    subject { response }
 
     context 'ログインしている場合' do
       before {
